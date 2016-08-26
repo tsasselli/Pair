@@ -16,6 +16,8 @@
 		642947FE1D709FA900735661 /* People+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642947FC1D709FA900735661 /* People+CoreDataProperties.swift */; };
 		642947FF1D709FA900735661 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642947FD1D709FA900735661 /* People.swift */; };
 		642948041D70A75800735661 /* PeopleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642948031D70A75800735661 /* PeopleController.swift */; };
+		642948071D70AFF800735661 /* PersonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642948061D70AFF800735661 /* PersonListViewController.swift */; };
+		642948091D70B60500735661 /* PersonDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642948081D70B60500735661 /* PersonDetailTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		642947FC1D709FA900735661 /* People+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "People+CoreDataProperties.swift"; path = "../People+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		642947FD1D709FA900735661 /* People.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = People.swift; path = ../People.swift; sourceTree = "<group>"; };
 		642948031D70A75800735661 /* PeopleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleController.swift; sourceTree = "<group>"; };
+		642948061D70AFF800735661 /* PersonListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonListViewController.swift; sourceTree = "<group>"; };
+		642948081D70B60500735661 /* PersonDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +66,9 @@
 		642947DE1D70962A00735661 /* Pair Code Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				642948051D70AFE700735661 /* View */,
 				642948001D70A0A800735661 /* Controller */,
 				642947F61D70998D00735661 /* Pair + Core Data */,
-				642947E31D70962A00735661 /* Main.storyboard */,
 				642947F71D7099AA00735661 /* Utilities */,
 			);
 			path = "Pair Code Challenge";
@@ -98,6 +102,16 @@
 				642948031D70A75800735661 /* PeopleController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		642948051D70AFE700735661 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				642948061D70AFF800735661 /* PersonListViewController.swift */,
+				642948081D70B60500735661 /* PersonDetailTableViewController.swift */,
+				642947E31D70962A00735661 /* Main.storyboard */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,11 +186,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				642947FE1D709FA900735661 /* People+CoreDataProperties.swift in Sources */,
+				642948091D70B60500735661 /* PersonDetailTableViewController.swift in Sources */,
 				642947E01D70962A00735661 /* AppDelegate.swift in Sources */,
 				642948041D70A75800735661 /* PeopleController.swift in Sources */,
 				642947F51D70997F00735661 /* Pair.xcdatamodeld in Sources */,
 				642947FF1D709FA900735661 /* People.swift in Sources */,
 				642947FB1D709ADF00735661 /* CoreDataStack.swift in Sources */,
+				642948071D70AFF800735661 /* PersonListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

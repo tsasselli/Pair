@@ -12,7 +12,7 @@ import CoreData
 
 class People: NSManagedObject {
 
-    static let entityName = "Person"
+    static let entityName = "People"
     
     convenience init (name: String, context: NSManagedObjectContext = Stack.sharedStack.managedObjectContext) {
         let entities = NSEntityDescription.entityForName(People.entityName, inManagedObjectContext: context)!

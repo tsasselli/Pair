@@ -56,7 +56,7 @@ extension Array where Element:Hashable {
         while self.count > 0 {
             var tuple: (a: Element, b: Element?)
             let randomIndexing = Int(arc4random_uniform(UInt32(self.count)))
-            if self.count == 2 {
+            if self.count == 1 {
                 tuple = (self[randomIndexing], nil)
                 self.removeAtIndex(randomIndexing)
                 newArray.append(tuple)
@@ -68,7 +68,7 @@ extension Array where Element:Hashable {
                 self.removeAtIndex(newRandomIndex)
                 newArray.append(tuple)
             }
-            return newArray
         }
+        return newArray
     }
 }
