@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		642947E01D70962A00735661 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642947DF1D70962A00735661 /* AppDelegate.swift */; };
-		642947E21D70962A00735661 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642947E11D70962A00735661 /* ViewController.swift */; };
 		642947E51D70962A00735661 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 642947E31D70962A00735661 /* Main.storyboard */; };
 		642947E71D70962A00735661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 642947E61D70962A00735661 /* Assets.xcassets */; };
 		642947EA1D70962A00735661 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 642947E81D70962A00735661 /* LaunchScreen.storyboard */; };
+		642947F51D70997F00735661 /* Pair.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 642947F31D70997F00735661 /* Pair.xcdatamodeld */; };
+		642947FB1D709ADF00735661 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642947FA1D709ADF00735661 /* CoreDataStack.swift */; };
+		642947FE1D709FA900735661 /* People+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642947FC1D709FA900735661 /* People+CoreDataProperties.swift */; };
+		642947FF1D709FA900735661 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642947FD1D709FA900735661 /* People.swift */; };
+		642948041D70A75800735661 /* PeopleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642948031D70A75800735661 /* PeopleController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		642947DC1D70962A00735661 /* Pair Code Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pair Code Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		642947DF1D70962A00735661 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		642947E11D70962A00735661 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		642947E41D70962A00735661 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		642947E61D70962A00735661 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		642947E91D70962A00735661 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		642947EB1D70962A00735661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		642947F41D70997F00735661 /* Pair.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pair.xcdatamodel; sourceTree = "<group>"; };
+		642947FA1D709ADF00735661 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		642947FC1D709FA900735661 /* People+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "People+CoreDataProperties.swift"; path = "../People+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		642947FD1D709FA900735661 /* People.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = People.swift; path = ../People.swift; sourceTree = "<group>"; };
+		642948031D70A75800735661 /* PeopleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,42 @@
 		642947DE1D70962A00735661 /* Pair Code Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				642947DF1D70962A00735661 /* AppDelegate.swift */,
-				642947E11D70962A00735661 /* ViewController.swift */,
+				642948001D70A0A800735661 /* Controller */,
+				642947F61D70998D00735661 /* Pair + Core Data */,
 				642947E31D70962A00735661 /* Main.storyboard */,
-				642947E61D70962A00735661 /* Assets.xcassets */,
-				642947E81D70962A00735661 /* LaunchScreen.storyboard */,
-				642947EB1D70962A00735661 /* Info.plist */,
+				642947F71D7099AA00735661 /* Utilities */,
 			);
 			path = "Pair Code Challenge";
+			sourceTree = "<group>";
+		};
+		642947F61D70998D00735661 /* Pair + Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				642947FC1D709FA900735661 /* People+CoreDataProperties.swift */,
+				642947FD1D709FA900735661 /* People.swift */,
+				642947F31D70997F00735661 /* Pair.xcdatamodeld */,
+				642947FA1D709ADF00735661 /* CoreDataStack.swift */,
+			);
+			name = "Pair + Core Data";
+			sourceTree = "<group>";
+		};
+		642947F71D7099AA00735661 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				642947DF1D70962A00735661 /* AppDelegate.swift */,
+				642947EB1D70962A00735661 /* Info.plist */,
+				642947E81D70962A00735661 /* LaunchScreen.storyboard */,
+				642947E61D70962A00735661 /* Assets.xcassets */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		642948001D70A0A800735661 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				642948031D70A75800735661 /* PeopleController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				642947E21D70962A00735661 /* ViewController.swift in Sources */,
+				642947FE1D709FA900735661 /* People+CoreDataProperties.swift in Sources */,
 				642947E01D70962A00735661 /* AppDelegate.swift in Sources */,
+				642948041D70A75800735661 /* PeopleController.swift in Sources */,
+				642947F51D70997F00735661 /* Pair.xcdatamodeld in Sources */,
+				642947FF1D709FA900735661 /* People.swift in Sources */,
+				642947FB1D709ADF00735661 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +328,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		642947F31D70997F00735661 /* Pair.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				642947F41D70997F00735661 /* Pair.xcdatamodel */,
+			);
+			currentVersion = 642947F41D70997F00735661 /* Pair.xcdatamodel */;
+			path = Pair.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 642947D41D70962A00735661 /* Project object */;
 }
